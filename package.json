@@ -1,0 +1,17 @@
+{
+  "name": "donamaria",
+  "version": "1.0.0",
+  "description": "Discord bot",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bot (Marco Sacristão)",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^7.0.1",
+    "request": "^2.72.0",
+    "superagent": "^2.0.0-alpha.3"
+  },
+  "devDependencies": {}
+}
