@@ -1,4 +1,4 @@
-PTBot
+Dona Maria
 ===
 A [Discord](http://discord.gg) bot written in Node using [Discord.js](https://github.com/hydrabolt/discord.js).
 
@@ -12,3 +12,6 @@ Run locally
  - Clone this repo
  - Run `npm install` to get the required dependencies
  - Run `node app.js`
+
+
+![Dona Maria](https://4.bp.blogspot.com/-CMvXZxkTQoY/Tmz4h6C3LDI/AAAAAAAABYk/Us6iZrMn5oI/s1600/velha-mirandela.jpg)
