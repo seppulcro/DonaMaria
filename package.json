@@ -9,6 +9,7 @@
   "author": "Bot (Marco Sacristão)",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^1.1.3",
     "discord.js": "^7.0.1",
     "request": "^2.72.0",
     "superagent": "^2.0.0-alpha.3"

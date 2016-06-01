@@ -1,19 +1,22 @@
 var Discord = require("discord.js");
 var request = require("superagent");
+const chalk = require('chalk');
+const errorC = chalk.bold.red;
 var botToken = "MTg0NDMwODYxMjA1MjQxODU4.CiUUwg.g7ez9ly0twKuEJ2f31mIcH1tu5k";
 var SOUNDDIR = "sounds/"
 var bot = new Discord.Client();
 
 //when the bot is ready
 bot.on("ready", function () {
-	console.log("Bot in: " + bot.channels.length + " channels");
+	for (var channel of bot.channels){
+		console.log(chalk.green("Bot joined:")+" "+channel.name+"@"+channel.server);
+	}
 });
 
 //when the bot disconnects
 bot.on("disconnected", function () {
 	//alert the console
-	console.log("Disconnected!");
-
+	console.log(errorC("Disconnected!"));
 	//exit node.js with an error
 	process.exit(1);
 });
@@ -59,7 +62,7 @@ bot.on("message", function (msg) {
 
 // This function is used by &init to handle connection errors
 function error(e) {
-	console.log(e.stack);
+	console.log(errorC(e.stack));
 	process.exit(0);
 }
 
