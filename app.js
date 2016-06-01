@@ -2,7 +2,7 @@ var Discord = require("discord.js");
 var request = require("superagent");
 const chalk = require('chalk');
 const errorC = chalk.bold.red;
-var botToken = "MTg0NDMwODYxMjA1MjQxODU4.CiUUwg.g7ez9ly0twKuEJ2f31mIcH1tu5k";
+var botToken = "";
 var SOUNDDIR = "sounds/"
 var bot = new Discord.Client();
 
